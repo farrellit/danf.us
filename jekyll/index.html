@@ -1,0 +1,38 @@
+---
+layout: page
+title: Welcome to danf.us
+navlink: false
+---
+
+
+<div class="home" style="display: flex">
+
+  <div style='display: flex-item'> 
+  
+  <h2>Blog Posts</h2>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h4>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h4>
+      </li>
+    {% endfor %}
+  </ul>
+  </div>
+
+  <div style='display: flex-item'> 
+
+    <h2>Links</h2>
+    <p>Agreed; you'll want to go somewhere more interesting.  Try these?</p>
+    <ul>
+      <li><a href='http://sailing.danf.us'>My Sailing Blog</a></li>
+      <li><a href='https://en.wikipedia.org/wiki/Special:Random'>Something Random</a></li>
+    </ul>
+  </div>
+
+</div>
+

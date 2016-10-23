@@ -1,0 +1,12 @@
+/**
+ * Reset some basic elements
+ */
+
+div.home {
+  display: flex;
+}
+
+div.home > div {
+  margin: 1em; 
+  padding: 1ex;
+}
