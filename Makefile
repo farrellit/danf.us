@@ -7,4 +7,4 @@ gen:
 	docker run -it -v `pwd`/jekyll:/srv/jekyll jekyll/jekyll jekyll build
 
 publish:
-	docker run -it -v `pwd`/jekyll:/code aws aws s3 --region us-east-2 cp --recursive _site/ s3://partnershipgarden.org/ --acl public-read
+	docker run -it -v `pwd`/jekyll:/code aws aws s3 --region us-east-2 cp --recursive _site/ s3://danf.us/ --acl public-read
